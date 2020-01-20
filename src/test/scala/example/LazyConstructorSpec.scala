@@ -6,7 +6,7 @@ import org.scalatest.matchers.should.Matchers
 class LazyConstructorsSpec extends AnyFunSpec with Matchers {
   describe("lazy constructor example") {
     it("should work with default") {
-      val lc = new LazyConstructors()
+      val lc = new LazyConstructors(LazyConstructors.defaultCons)
       lc.callMe should be ("example")
     }
 
